@@ -9,7 +9,7 @@ class ExampleView {
         // Get a URL param
         $urlParam = (string) $request->urlParam('someParam');
 
-        // Is the SteamID64 valid?
+        // Is the param valid?
         if (!$urlParam !== 'testval') {
             throw new BadRequestException('Invalid param provided');
         }
